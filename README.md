@@ -4,7 +4,8 @@ Bilateral trade calibration is of vital importance for this study. In GLOBIOM, f
 
 Trade costs in period t are calculated with andreflecting the elasticity of trade costs to traded quantity in the respective equations. The intercept is equal to the tariff plus transport cost. The bilateral trade flows between China and other countries for 2010 were calibrated to match the FAO trade matrix statistics by manipulating the elasticities and intercepts in the trade cost equations. The bilateral trade validation of major commodities is shown in figure 1.
 
-![](RackMultipart20210326-4-1iyd3s7_html_df3648b619171c80.png) ![](RackMultipart20210326-4-1iyd3s7_html_e01616caa1429b5b.png)
+![](https://github.com/iiasa/virtual_trade/blob/main/images/calibration_results1.png)
+![](https://github.com/iiasa/virtual_trade/blob/main/images/calibration_results2.png)
 
 Figure 1. Trade calibration results for key agricultural commodities. The first column represents China&#39;s net import quantities, and the last three plots refer to imports from major trade partners.
 
