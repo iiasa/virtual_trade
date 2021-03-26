@@ -2,7 +2,9 @@
 
 Bilateral trade calibration is of vital importance for this study. In GLOBIOM, future trade flows are determined by commodity prices, trade costs. Trade costs include tariffs, transport costs, and a nonlinear trade expansion costs that reflect persistency in trade patterns. Tariffs and transport costs are kept same as base year. The trade expansion costs are used in GLOBIOM to represent the capacity constraints slowing down expansion of trade flows in the short term. They can be regarded as investments necessary to expand trading infrastructure. GLOBIOM allows for appearance of new trade flows, which were not observed in the base year. Exponential function represents the trade cost (1) when trade flows are observed in the base year, for new trade flows a quadratic trade cost function (2) is used:
 
-![formula1](https://render.githubusercontent.com/render/math?math=%5Cbegin%7Balign%7D%0ATradecost_t%3D%5Cfrac%7B%5Cepsilon%7D%7B1%2B%5Cepsilon%7D%5Ctimes%5Cfrac%7BTariff%2BTransportcost%7D%7BShipment_%7Bt-1%7D%5E%7B1%2F%5Cepsilon%7D%7D%5Ctimes%20Shipment_t%5E%7B%5Cfrac%7B1%7D%7B%5Cepsilon%7D%2B1%7D%5C%5C%0ATradecost_t%3DIntercept%5Ctimes%20Shipment_t%20%2B0.5%5Ctimes%20slope%20%5Ctimes%20Shipment_t%5E2%0A%5Cend%7Balign%7D)
+![formula1](https://render.githubusercontent.com/render/math?math=Tradecost_t%3D%5Cfrac%7B%5Cepsilon%7D%7B1%2B%5Cepsilon%7D%5Ctimes%5Cfrac%7BTariff%2BTransportcost%7D%7BShipment_%7Bt-1%7D%5E%7B1%2F%5Cepsilon%7D%7D%5Ctimes%20Shipment_t%5E%7B%5Cfrac%7B1%7D%7B%5Cepsilon%7D%2B1%7D%5Cqquad%20(1))
+
+![formula2](https://render.githubusercontent.com/render/math?math=Tradecost_t%3DIntercept%5Ctimes%20Shipment_t%20%2B0.5%5Ctimes%20slope%20%5Ctimes%20Shipment_t%5E2%5Cqquad%20(2))
 
 Trade costs in period t are calculated with andreflecting the elasticity of trade costs to traded quantity in the respective equations. The intercept is equal to the tariff plus transport cost. The bilateral trade flows between China and other countries for 2010 were calibrated to match the FAO trade matrix statistics by manipulating the elasticities and intercepts in the trade cost equations. The bilateral trade validation of major commodities is shown in figure 1.
 
@@ -30,6 +32,8 @@ Table 1. The import value (Billion US$) of agricultural products from main expor
 | Rest of world | 13.8 | 12.0 | 14.7 | 13.5 | 18% |
 
 With respect to China trade flows, we also calculated the export effects, however, due to the imports are dominating overall trade pattern of China, we allocated the export impacts into domestic production side. To calculate trade impact, we assume that production for domestic consumption and export have the same domestic environmental impact. This is the assumption commonly used in many previous studies on virtual trade in water (Hoekstra and Hung, 2005), land (Würtenberger et al., 2006), and nitrogen (Huang et al., 2019). The environmental intensity in a resource for a specific product _P_ in exporting regions _R_ and specific year _T_ is defined as:
+
+![formula3](https://render.githubusercontent.com/render/math?math=Virtual_%7Barea_%7BR%2CP%2CT%7D%7D%3DBilateralT_%7BR%2CP%2CT%7D%5Ctimes%20Land_%7Bintensity_%7BR%2CP%2CT%7D%7D%3DBilateralT_%7BR%2CP%2CT%7D%5Ctimes%5Cfrac%7BAREA_%7BR%2CP%2CT%7D%7D%7BPROD_%7BR%2CP%2CT%7D%7D%5Cqquad%20(3))
 
 Where is the bilateral trade quantity of product exported to China from region in year . Bilateral trade volumes are here represented as net flows, as our framework rely on an homogenous good assumption (Takayama, T. and Judge, 1971) and hence a pair of trading partners will be always trading only in one direction at the same time. is in specific year , total production of product of exporting region . is total harvested area of product in exporting region . The market variables, bilateral trade quantity, land area and production quantities has been estimated based on FAOSTAT data.
 
