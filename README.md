@@ -2,7 +2,9 @@
 
 Bilateral trade calibration is of vital importance for this study. In GLOBIOM, future trade flows are determined by commodity prices, trade costs. Trade costs include tariffs, transport costs, and a nonlinear trade expansion costs that reflect persistency in trade patterns. Tariffs and transport costs are kept same as base year. The trade expansion costs are used in GLOBIOM to represent the capacity constraints slowing down expansion of trade flows in the short term. They can be regarded as investments necessary to expand trading infrastructure. GLOBIOM allows for appearance of new trade flows, which were not observed in the base year. Exponential function represents the trade cost (1) when trade flows are observed in the base year, for new trade flows a quadratic trade cost function (2) is used:
 
-![formula](https://render.githubusercontent.com/render/math?math=%5Cbegin%7Balign%7D%0ATradecost_t%3D%5Cfrac%7B%5Cepsilon%7D%7B1%2B%5Cepsilon%7D%5Ctimes%5Cfrac%7BTariff%2BTransportcost%7D%7BShipment_%7Bt-1%7D%5E%7B1%2F%5Cepsilon%7D%7D%5Ctimes%20Shipment_t%5E%7B%5Cfrac%7B1%7D%7B%5Cepsilon%7D%2B1%7D%0A%5Cend%7Balign%7D)
+![formula1](https://render.githubusercontent.com/render/math?math=%5Cbegin%7Balign%7D%0ATradecost_t%3D%5Cfrac%7B%5Cepsilon%7D%7B1%2B%5Cepsilon%7D%5Ctimes%5Cfrac%7BTariff%2BTransportcost%7D%7BShipment_%7Bt-1%7D%5E%7B1%2F%5Cepsilon%7D%7D%5Ctimes%20Shipment_t%5E%7B%5Cfrac%7B1%7D%7B%5Cepsilon%7D%2B1%7D%0A%5Cend%7Balign%7D)
+
+![formula2](https://render.githubusercontent.com/render/math?math=%5Cbegin%7Balign%7D%0ATradecost_t%3DIntercept%5Ctimes%20Shipment_t%20%2B0.5%5Ctimes%20slope%20%5Ctimes%20Shipment_t%5E2%0A%5Cend%7Balign%7D)
 
 Trade costs in period t are calculated with andreflecting the elasticity of trade costs to traded quantity in the respective equations. The intercept is equal to the tariff plus transport cost. The bilateral trade flows between China and other countries for 2010 were calibrated to match the FAO trade matrix statistics by manipulating the elasticities and intercepts in the trade cost equations. The bilateral trade validation of major commodities is shown in figure 1.
 
