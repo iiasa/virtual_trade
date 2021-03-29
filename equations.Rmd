@@ -30,7 +30,7 @@ $$
 Virtual_{N_{R,P,T}}=BilateralT_{R,P,T}\times N_{intensity_{R,P,T}}=BilateralT_{R,P,T}\times\frac{N_{input_{R,P,T}}}{PROD_{R,P,T}}\qquad (4)
 $$
 $$
-Virtual{\_}water_{R,P,T}=BilateralT_{R,P,T}\times Water{\_}intensity_{R,P,T}W=BilateralT_{R,P,T}\times\frac{Water_{R,P,T}}{PROD_{R,P,T}}\qquad (5)
+Virtual{\_}water_{R,P,T}=BilateralT_{R,P,T}\times Water{\_}intensity_{R,P,T}=BilateralT_{R,P,T}\times\frac{Water_{R,P,T}}{PROD_{R,P,T}}\qquad (5)
 $$
 
 $$
