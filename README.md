@@ -35,7 +35,7 @@ Table 1. The import value (Billion US$) of agricultural products from main expor
 
 With respect to China trade flows, we also calculated the export effects, however, due to the imports are dominating overall trade pattern of China, we allocated the export impacts into domestic production side. To calculate trade impact, we assume that production for domestic consumption and export have the same domestic environmental impact. This is the assumption commonly used in many previous studies on virtual trade in water (Hoekstra and Hung, 2005), land (Würtenberger et al., 2006), and nitrogen (Huang et al., 2019). The environmental intensity in a resource for a specific product _P_ in exporting regions _R_ and specific year _T_ is defined as:
 
-![eq3](https://render.githubusercontent.com/render/math?math=Virtual_%7Barea_%7BR%2CP%2CT%7D%7D%3DBilateralT_%7BR%2CP%2CT%7D%5Ctimes%20Land_%7Bintensity_%7BR%2CP%2CT%7D%7D%3DBilateralT_%7BR%2CP%2CT%7D%5Ctimes%5Cfrac%7BAREA_%7BR%2CP%2CT%7D%7D%7BPROD_%7BR%2CP%2CT%7D%7D%5Cqquad%20(3))
+![eq3](https://render.githubusercontent.com/render/math?math=Virtual%7B%5C_%7Darea_%7BR%2CP%2CT%7D%3DBilateralT_%7BR%2CP%2CT%7D%5Ctimes%20Land%7B%5C_%7Dintensity_%7BR%2CP%2CT%7D%3DBilateralT_%7BR%2CP%2CT%7D%5Ctimes%5Cfrac%7BAREA_%7BR%2CP%2CT%7D%7D%7BPROD_%7BR%2CP%2CT%7D%7D%5Cqquad%20(3)%0A)
 
 ![eq4](https://render.githubusercontent.com/render/math?math=Virtual_%7BN_%7BR%2CP%2CT%7D%7D%3DBilateralT_%7BR%2CP%2CT%7D%5Ctimes%20N_%7Bintensity_%7BR%2CP%2CT%7D%7D%3DBilateralT_%7BR%2CP%2CT%7D%5Ctimes%5Cfrac%7BN_%7Binput_%7BR%2CP%2CT%7D%7D%7D%7BPROD_%7BR%2CP%2CT%7D%7D%5Cqquad%20(4))
 
