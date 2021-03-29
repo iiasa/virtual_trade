@@ -1,0 +1,38 @@
+---
+title: "Equations for 'Virtual trade flows embodied in China imports' document"
+author: "Albert Brouwer"
+date: "3/26/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Use [this URL-encoding web app](https://www.browserling.com/tools/url-encode) to encode LaTeX into URL-allowed
+format, and then embed in a renderer URL as below:
+
+`![<label>](https://render.githubusercontent.com/render/math?math=<URL-encoded-LaTeX>)`
+
+$$
+Tradecost_t=\frac{\epsilon}{1+\epsilon}\times\frac{Tariff+Transportcost}{Shipment_{t-1}^{1/\epsilon}}\times Shipment_t^{\frac{1}{\epsilon}+1}\qquad (1)
+$$
+
+$$
+Tradecost_t=Intercept\times Shipment_t +0.5\times slope \times Shipment_t^2\qquad (2)
+$$
+
+$$
+Virtual{\_}area_{R,P,T}=BilateralT_{R,P,T}\times Land{\_}intensity_{R,P,T}=BilateralT_{R,P,T}\times\frac{AREA_{R,P,T}}{PROD_{R,P,T}}\qquad (3)
+$$
+
+$$
+Virtual_{N_{R,P,T}}=BilateralT_{R,P,T}\times N_{intensity_{R,P,T}}=BilateralT_{R,P,T}\times\frac{N_{input_{R,P,T}}}{PROD_{R,P,T}}\qquad (4)
+$$
+$$
+Virtual{\_}water_{R,P,T}=BilateralT_{R,P,T}\times Water{\_}intensity_{R,P,T}W=BilateralT_{R,P,T}\times\frac{Water_{R,P,T}}{PROD_{R,P,T}}\qquad (5)
+$$
+
+$$
+Virtual{\_}Agri_{R,P,T}=BilateralT_{R,P,T}\times Agri{\_}GHG{\_}intensity_{R,P,T}=BilateralT_{R,P,T}\times\frac{Agri{\_}GHG_{R,P,T}}{PROD_{R,P,T}}\qquad (6)
+$$
