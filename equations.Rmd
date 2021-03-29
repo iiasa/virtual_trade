@@ -25,7 +25,6 @@ $$
 $$
 Virtual{\_}area_{R,P,T}=BilateralT_{R,P,T}\times Land{\_}intensity_{R,P,T}=BilateralT_{R,P,T}\times\frac{AREA_{R,P,T}}{PROD_{R,P,T}}\qquad (3)
 $$
-
 $$
 Virtual_{N_{R,P,T}}=BilateralT_{R,P,T}\times N_{intensity_{R,P,T}}=BilateralT_{R,P,T}\times\frac{N_{input_{R,P,T}}}{PROD_{R,P,T}}\qquad (4)
 $$
@@ -35,4 +34,12 @@ $$
 
 $$
 Virtual{\_}Agri_{R,P,T}=BilateralT_{R,P,T}\times Agri{\_}GHG{\_}intensity_{R,P,T}=BilateralT_{R,P,T}\times\frac{Agri{\_}GHG_{R,P,T}}{PROD_{R,P,T}}\qquad (6)
+$$
+
+$$
+Virtual{\_}deforemission_{R,T}=Deforemis{\_}crop_{R,T}\times\frac{\Delta Crop{\_}area_{R,P,T}}{\sum^{P}_{P=1}\Delta Crop{\_}area_{R,P,T}}\times\frac{Virtual{\_}Crop{\_}area_{R,P,T}}{Crop{\_}area_{R,P,T}},\forall\Delta Crop{\_}area_{R,P,T}>0\qquad (7)
+$$
+
+$$
+Virtual{\_}deforemission_{R,T}=Deforemis{\_}live_{R,T}\times\frac{\Delta Pasture_{R,P,T}}{\sum^{P}_{P=1}\Delta Pasture_{R,P,T}}\times\frac{Virtual{\_}Pasture_{R,P,T}}{Pasture_{R,P,T}},\forall\Delta Pasture_{R,P,T}>0\qquad (8)
 $$
