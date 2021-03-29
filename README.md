@@ -39,6 +39,10 @@ With respect to China trade flows, we also calculated the export effects, howeve
 
 ![eq4](https://render.githubusercontent.com/render/math?math=Virtual_%7BN_%7BR%2CP%2CT%7D%7D%3DBilateralT_%7BR%2CP%2CT%7D%5Ctimes%20N_%7Bintensity_%7BR%2CP%2CT%7D%7D%3DBilateralT_%7BR%2CP%2CT%7D%5Ctimes%5Cfrac%7BN_%7Binput_%7BR%2CP%2CT%7D%7D%7D%7BPROD_%7BR%2CP%2CT%7D%7D%5Cqquad%20(4))
 
+![eq5](https://render.githubusercontent.com/render/math?math=Virtual%7B%5C_%7Dwater_%7BR%2CP%2CT%7D%3DBilateralT_%7BR%2CP%2CT%7D%5Ctimes%20Water%7B%5C_%7Dintensity_%7BR%2CP%2CT%7D%3DBilateralT_%7BR%2CP%2CT%7D%5Ctimes%5Cfrac%7BWater_%7BR%2CP%2CT%7D%7D%7BPROD_%7BR%2CP%2CT%7D%7D%5Cqquad%20(5))
+
+![eq6](https://render.githubusercontent.com/render/math?math=Virtual%7B%5C_%7DAgri_%7BR%2CP%2CT%7D%3DBilateralT_%7BR%2CP%2CT%7D%5Ctimes%20Agri%7B%5C_%7DGHG%7B%5C_%7Dintensity_%7BR%2CP%2CT%7D%3DBilateralT_%7BR%2CP%2CT%7D%5Ctimes%5Cfrac%7BAgri%7B%5C_%7DGHG_%7BR%2CP%2CT%7D%7D%7BPROD_%7BR%2CP%2CT%7D%7D%5Cqquad%20(6))
+
 Where is the bilateral trade quantity of product exported to China from region in year . Bilateral trade volumes are here represented as net flows, as our framework rely on an homogenous good assumption (Takayama, T. and Judge, 1971) and hence a pair of trading partners will be always trading only in one direction at the same time. is in specific year , total production of product of exporting region . is total harvested area of product in exporting region . The market variables, bilateral trade quantity, land area and production quantities has been estimated based on FAOSTAT data.
 
 Virtual nitrogen (N) and water calculations follow the same logic - see Equation 4 and 5 - where represents synthetic fertilizer use, and represents irrigation water use for product of exporting region . For nitrogen and irrigation water, we used crop-specific resource intensity informed by EPIC model calculations.
