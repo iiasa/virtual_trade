@@ -1,5 +1,7 @@
 # Virtual trade flows embodied in China imports
 
+## Introduction
+
 Bilateral trade calibration is of vital importance for this study. In GLOBIOM, future trade flows are determined by commodity prices, trade costs. Trade costs include tariffs, transport costs, and a nonlinear trade expansion costs that reflect persistency in trade patterns. Tariffs and transport costs are kept same as base year. The trade expansion costs are used in GLOBIOM to represent the capacity constraints slowing down expansion of trade flows in the short term. They can be regarded as investments necessary to expand trading infrastructure. GLOBIOM allows for appearance of new trade flows, which were not observed in the base year. Exponential function represents the trade cost (1) when trade flows are observed in the base year, for new trade flows a quadratic trade cost function (2) is used:
 
 ![eq1](https://render.githubusercontent.com/render/math?math=Tradecost_t%3D%5Cfrac%7B%5Cepsilon%7D%7B1%2B%5Cepsilon%7D%5Ctimes%5Cfrac%7BTariff%2BTransportcost%7D%7BShipment_%7Bt-1%7D%5E%7B1%2F%5Cepsilon%7D%7D%5Ctimes%20Shipment_t%5E%7B%5Cfrac%7B1%7D%7B%5Cepsilon%7D%2B1%7D%5Cqquad%20(1))
@@ -13,7 +15,7 @@ Trade costs in period t are calculated with andreflecting the elasticity of trad
 
 Figure 1. Trade calibration results for key agricultural commodities. The first column represents China&#39;s net import quantities, and the last three plots refer to imports from major trade partners.
 
-**Documentation of virtual trade calculation**
+## Documentation of virtual trade calculation
 
 Virtual trade flows refer to resources or pollution embodied in international trade. We focus our analysis on seven major exporting regions to China: Argentina, Australia, Brazil, Canada, New Zealand, the United States, and the European Union, which account for more than 80% of the value of China agricultural imports (Table 1).
 
@@ -72,7 +74,7 @@ where and are deforestation emission caused by cropland and pasture expansion in
 
 Environmental impacts due to feed production are included in the virtual trade flows related to livestock products. For this purpose, we used the regional livestock production specific feed requirements from Herrero et al. 2013 Then we calculated the total use of feed for different livestock products and the related domestic environmental impacts and allocated them proportionally based on quantities of the bilateral trade to the environmental impacts imported by China. For feed crops embodied in the trade of livestock products, we took into account only locally produced feed. This may lead to minor underestimation of the overall impact of China&#39;s imports, but this should remain minor as many livestock products exporters to China are not major feed crop importers.
 
-**Reference**
+## References
 
 Curtis, P.G., Slay, C.M., Harris, N.L., Tyukavina, A., Hansen, M.C., 2018. Classifying drivers of global forest loss. Science (80-. ). 361, 1108–1111. https://doi.org/10.1126/science.aau3445
 
