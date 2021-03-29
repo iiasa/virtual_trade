@@ -8,7 +8,7 @@ In GLOBIOM, future trade flows are determined by commodity prices, trade costs. 
 
 ![eq2](https://render.githubusercontent.com/render/math?math=Tradecost_t%3DIntercept%5Ctimes%20Shipment_t%20%2B0.5%5Ctimes%20slope%20%5Ctimes%20Shipment_t%5E2%5Cqquad%20(2))
 
-Trade costs in period t are calculated with and reflecting the elasticity of trade costs to traded quantity in the respective equations. The intercept is equal to the tariff plus transport cost. The bilateral trade flows between China and other countries for 2010 were calibrated to match the FAO trade matrix statistics by manipulating the elasticities and intercepts in the trade cost equations. The bilateral trade validation of major commodities is shown in figure 1.
+Trade costs in period _t_ are calculated with _ϵ_ and _slope_ reflecting the elasticity of trade costs to traded quantity in the respective equations. The _Intercept_ is equal to the tariff plus transport cost. The bilateral trade flows between China and other countries for 2010 were calibrated to match the FAO trade matrix statistics by manipulating the elasticities and intercepts in the trade cost equations. The bilateral trade validation of major commodities is shown in figure 1.
 
 ![](https://github.com/iiasa/virtual_trade/blob/main/images/calibration_results1.png)
 ![](https://github.com/iiasa/virtual_trade/blob/main/images/calibration_results2.png)
@@ -43,11 +43,12 @@ With respect to China trade flows, we also calculated the export effects, howeve
 
 ![eq6](https://render.githubusercontent.com/render/math?math=Virtual%7B%5C_%7DAgri_%7BR%2CP%2CT%7D%3DBilateralT_%7BR%2CP%2CT%7D%5Ctimes%20Agri%7B%5C_%7DGHG%7B%5C_%7Dintensity_%7BR%2CP%2CT%7D%3DBilateralT_%7BR%2CP%2CT%7D%5Ctimes%5Cfrac%7BAgri%7B%5C_%7DGHG_%7BR%2CP%2CT%7D%7D%7BPROD_%7BR%2CP%2CT%7D%7D%5Cqquad%20(6))
 
-Where is the bilateral trade quantity of product exported to China from region in year . Bilateral trade volumes are here represented as net flows, as our framework rely on an homogenous good assumption (Takayama, T. and Judge, 1971) and hence a pair of trading partners will be always trading only in one direction at the same time. is in specific year , total production of product of exporting region . is total harvested area of product in exporting region . The market variables, bilateral trade quantity, land area and production quantities has been estimated based on FAOSTAT data.
+Where ![bilat](https://render.githubusercontent.com/render/math?math=BilateralT_%7BR%2CP%2CT%7D)
+ is the bilateral trade quantity of product _P_ exported to China from region _R_ in year _T_. Bilateral trade volumes are here represented as net flows, as our framework rely on an homogenous good assumption (Takayama, T. and Judge, 1971) and hence a pair of trading partners will be always trading only in one direction at the same time. ![prod](https://render.githubusercontent.com/render/math?math=PROD_%7BR%2CP%2CT%7D%7D) is in specific year _T_, total production of product _P_ of exporting region _R_. ![area](https://render.githubusercontent.com/render/math?math=AREA_%7BR%2CP%2CT%7D) is total harvested area of product _P_ in exporting region _R_. The market variables, bilateral trade quantity, land area and production quantities have been estimated based on FAOSTAT data.
 
-Virtual nitrogen (N) and water calculations follow the same logic - see Equation 4 and 5 - where represents synthetic fertilizer use, and represents irrigation water use for product of exporting region . For nitrogen and irrigation water, we used crop-specific resource intensity informed by EPIC model calculations.
+Virtual nitrogen (_N_) and water calculations follow the same logic - see Equation 4 and 5 - where ![Ninput](https://render.githubusercontent.com/render/math?math=N_%7Binput_%7BR%2CP%2CT%7D%7D) represents synthetic fertilizer use, and ![water](https://render.githubusercontent.com/render/math?math=Water_%7BR%2CP%2CT%7D) represents irrigation water use for product _P_ of exporting region _R_. For nitrogen and irrigation water, we used crop-specific resource intensity informed by EPIC model calculations.
 
-Equation 6 was used to calculate virtual agricultural related GHG emissions. Fertilizer nitrous oxide (N2O) emissions and methane (CH4) from rice paddies were considered as direct crop related GHG emissions. N2O was calculated based on N fertilizer consumption and IPCC emission coefficients (IPCC, 2006) and rice CH4 based on FAOSTAT average emission factors ([http://www.fao.org/fao-stat/en/#data/GR](http://www.fao.org/fao-stat/en/#data/GR)). For livestock products, we used emissions intensity parameters for CH4 and N2O from enteric fermentation, manure management, manure dropped on pastures, rangelands and paddocks, and manure management from the global livestock production systems database (Herrero et al., 2013).
+Equation 6 was used to calculate virtual agricultural related GHG emissions. Fertilizer nitrous oxide (N<sub>2</sub>O) emissions and methane (CH<sub>4</sub>) from rice paddies were considered as direct crop related GHG emissions. N<sub>2</sub>O was calculated based on N fertilizer consumption and IPCC emission coefficients (IPCC, 2006) and rice CH<sub>4</sub> based on FAOSTAT average emission factors ([http://www.fao.org/fao-stat/en/#data/GR](http://www.fao.org/fao-stat/en/#data/GR)). For livestock products, we used emissions intensity parameters for CH<sub>4</sub> and N<sub>2</sub>O from enteric fermentation, manure management, manure dropped on pastures, rangelands and paddocks, and manure management from the global livestock production systems database (Herrero et al., 2013).
 
 Land use: Data on land type and land cover are based on GLC2000 ([https://forobs.jrc.ec.europa.eu/pr-oducts/glc2000/glc2000.php](https://forobs.jrc.ec.europa.eu/pr-oducts/glc2000/glc2000.php)) and are used in the following aggregate categories: Cropland, Other agricultural land, Pasture, Forest, Wetland, Other natural land, Not relevant land. In this study, we focus on agricultural land (Cropland and Pasture) and forest. Definition of pasture in GLOBIOM is where ruminants grazing is occurring which explains why pasture area differs from grassland statistics. The remaining grassland in GLOBIOM is included in other natural vegetation because it has more ecological function than agricultural use.
 
@@ -59,16 +60,16 @@ Table 2 GHG emissions in GLOBIOM
 
 | Sector | Type | GHG | Source |
 | --- | --- | --- | --- |
-| Crop | Rice methane | CH4 | FAO average value |
+| Crop | Rice methane | CH<sub>4</sub> | FAO average value |
 | --- | --- | --- | --- |
-| Crop | Synthetic fertilizer | N2O | IPCC coefficients (IPCC, 2006) |
-| Crop | Organic Fertilizer | N2O | Herrero _et al._, 2013 |
-| Livestock | Enteric fermentation | CH4 | Herrero _et al._, 2013 |
-| Livestock | Manure management | CH4 | Herrero _et al._, 2013 |
-| Livestock | Manure management | N2O | Herrero _et al._, 2013 |
-| Livestock | Manure grassland | N2O | Herrero _et al._, 2013 |
-| Land use change | Deforestation | CO2 | G4M model (G. Kindermann et al., 2008) |
-| Land use change | Other natural land conversion | CO2 | Gibbs and Ruesch, 2008 |
+| Crop | Synthetic fertilizer | N<sub>2</sub>O | IPCC coefficients (IPCC, 2006) |
+| Crop | Organic Fertilizer | N<sub>2</sub>O | Herrero _et al._, 2013 |
+| Livestock | Enteric fermentation | CH<sub>4</sub> | Herrero _et al._, 2013 |
+| Livestock | Manure management | CH<sub>4</sub> | Herrero _et al._, 2013 |
+| Livestock | Manure management | N<sub>2</sub>O | Herrero _et al._, 2013 |
+| Livestock | Manure grassland | N<sub>2</sub>O | Herrero _et al._, 2013 |
+| Land use change | Deforestation | CO<sub>2</sub> | G4M model (G. Kindermann et al., 2008) |
+| Land use change | Other natural land conversion | CO<sub>2</sub> | Gibbs and Ruesch, 2008 |
 
 Irrigation water use: Water availability was simulated with LPJmL a hydrological model (Gerten et al., 2004). Water demand is based on EPIC runs for different crops, and rescaled to country total irrigation water withdrawals in FAO AQUASTAT (FAO, 2016) to adjust for water use efficiency. And crop-specific irrigation area is derived from Spatial Production Allocation Model (Liu et al., 2013). More information can be referred to Sauer _et al._, 2010.
 
