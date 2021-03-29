@@ -1,4 +1,4 @@
-**Documentation of trade calibration**
+# Virtual trade flows embodied in China imports
 
 Bilateral trade calibration is of vital importance for this study. In GLOBIOM, future trade flows are determined by commodity prices, trade costs. Trade costs include tariffs, transport costs, and a nonlinear trade expansion costs that reflect persistency in trade patterns. Tariffs and transport costs are kept same as base year. The trade expansion costs are used in GLOBIOM to represent the capacity constraints slowing down expansion of trade flows in the short term. They can be regarded as investments necessary to expand trading infrastructure. GLOBIOM allows for appearance of new trade flows, which were not observed in the base year. Exponential function represents the trade cost (1) when trade flows are observed in the base year, for new trade flows a quadratic trade cost function (2) is used:
 
