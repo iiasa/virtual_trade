@@ -17,7 +17,6 @@ p_load("quickPlot", "classInt", "countrycode", "viridis", "gdxrrw", "ncdf4")
 
 
 ## read GLOBIOM outputs and set 
-setwd("F:/GLOBIOM/paper1")
 getwd()
 
 #save.image(file = "virtual_trade.RData")
@@ -26,9 +25,9 @@ load("virtual_trade.RData")
 
 
 ### Trade Regions 
-region_map <- read.csv("paper1_R/region_map.csv")
+region_map <- read.csv("region_map.csv")
 ### livestock protein content
-live_protein <- read.csv("paper1_R/live_protein.csv")
+live_protein <- read.csv("live_protein.csv")
 
 # disaggregate milk and meat from BOVD,SGTD, egg and meat from PTRX
 bovd_dis <- live_yield %>%
