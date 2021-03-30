@@ -96,6 +96,10 @@ The table below summarizes how the symbols in the above equations map to GLOBIOM
 | ![ca](https://render.githubusercontent.com/render/math?math=Crop%7B%5C_%7Darea_%7BR%2CP%2CT%7D) | Area for crops |
 | ![Dpasture](https://render.githubusercontent.com/render/math?math=%5CDelta%20Pasture_%7BR%2CP%2CT%7D) | GrsLnd |
 
+![defc](https://render.githubusercontent.com/render/math?math=Deforemis%7B%5C_%7Dcrop_%7BR%2CT%7D) is derived from a_6.gdx FOREST_EMISSION_COMPARE.
+
+![<defl>](https://render.githubusercontent.com/render/math?math=Deforemis%7B%5C_%7Dlive_%7BR%2CT%7D) is derived from a_6.gdx FOREST_EMISSION_COMPARE.
+ 
 ## References
 
 Curtis, P.G., Slay, C.M., Harris, N.L., Tyukavina, A., Hansen, M.C., 2018. Classifying drivers of global forest loss. Science (80-. ). 361, 1108–1111. https://doi.org/10.1126/science.aau3445
