@@ -83,6 +83,19 @@ where ![defc](https://render.githubusercontent.com/render/math?math=Deforemis%7B
 
 Environmental impacts due to feed production are included in the virtual trade flows related to livestock products. For this purpose, we used the regional livestock production specific feed requirements from Herrero _et al._ 2013. Then we calculated the total use of feed for different livestock products and the related domestic environmental impacts and allocated them proportionally based on quantities of the bilateral trade to the environmental impacts imported by China. For feed crops embodied in the trade of livestock products, we took into account only locally produced feed. This may lead to minor underestimation of the overall impact of China's imports, but this should remain minor as many livestock products exporters to China are not major feed crop importers.
 
+## Mapping to GLOBIOM parameters
+
+The table below summarizes how the symbols in the above equations map to GLOBIOM-internal parameters.
+
+| Symbol | GLOBIOM |
+| --- | --- |
+| ![prod](https://render.githubusercontent.com/render/math?math=PROD_%7BR%2CP%2CT%7D) | Prod |
+| ![area](https://render.githubusercontent.com/render/math?math=AREA_%7BR%2CP%2CT%7D) | Area |
+| ![water](https://render.githubusercontent.com/render/math?math=Water_%7BR%2CP%2CT%7D) | WATR |
+| ![Ninput](https://render.githubusercontent.com/render/math?math=N_%7Binput_%7BR%2CP%2CT%7D%7D) | FRTN |
+| ![ca](https://render.githubusercontent.com/render/math?math=Crop%7B%5C_%7Darea_%7BR%2CP%2CT%7D) | Area for crops |
+| ![Dpasture](https://render.githubusercontent.com/render/math?math=%5CDelta%20Pasture_%7BR%2CP%2CT%7D) | GrsLnd |
+
 ## References
 
 Curtis, P.G., Slay, C.M., Harris, N.L., Tyukavina, A., Hansen, M.C., 2018. Classifying drivers of global forest loss. Science (80-. ). 361, 1108–1111. https://doi.org/10.1126/science.aau3445
