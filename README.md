@@ -8,7 +8,7 @@ In [GLOBIOM](https://www.globiom.org/), future trade flows are determined by com
 
 ![eq2](https://render.githubusercontent.com/render/math?math=Tradecost_t%3DIntercept%5Ctimes%20Shipment_t%20%2B0.5%5Ctimes%20slope%20%5Ctimes%20Shipment_t%5E2%5Cqquad%20(2))
 
-Trade costs in period _t_ are calculated with _ϵ_ and _slope_ reflecting the elasticity of trade costs to traded quantity in the respective equations. The _Intercept_ is equal to the tariff plus transport cost. The bilateral trade flows between China and other countries for 2010 were calibrated to match the FAO trade matrix statistics by manipulating the elasticities and intercepts in the trade cost equations. The bilateral trade validation of major commodities is shown in figure 1.
+Trade costs in period _t_ are calculated with _ϵ_ and _slope_ reflecting the elasticity of trade costs to traded quantity in the respective equations. The _Intercept_ is equal to the tariff plus transport cost. The bilateral trade flows between China and other countries for 2010 were calibrated to match the FAO trade matrix statistics by manipulating the elasticities and slopes in the trade cost equations. To increase the bilateral trade quantity for existing trade flows, the elasticity should be higher than before. In terms of new trade flows, low value of slope may lead easier creation of trade. In the file trade_cost_chn.gms, the detailed adjustment of these key parameters are shown. The bilateral trade validation of major commodities is shown in figure 1.
 
 ![](https://github.com/iiasa/virtual_trade/blob/main/images/calibration_results1.png)
 ![](https://github.com/iiasa/virtual_trade/blob/main/images/calibration_results2.png)
